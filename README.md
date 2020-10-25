@@ -1,2 +1,3 @@
-# www.charj-lang.org
+# Charj
+
 The home of the Charj website 
