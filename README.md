@@ -10,6 +10,7 @@ Charj Lang 是一个使用 Rust 编写的**描述式**、**中间**编程语言�
  - visualize architecture.
  - a quick DSL maker's infrastructure. (TBD)
 
+## Workflow
 
 ```step-line
  - Code
@@ -20,7 +21,7 @@ Charj Lang 是一个使用 Rust 编写的**描述式**、**中间**编程语言�
  - HIR
  - MIR
  - Codegen
- - LLVM ID
+ - LLVM IR
 ```
 
 上下游支撑项目：
@@ -28,3 +29,6 @@ Charj Lang 是一个使用 Rust 编写的**描述式**、**中间**编程语言�
 1. 语言转换：[Charj Poet](https://github.com/charj-lang/charj-poet)
 2. IDEA 插件: [Intellij Charj](https://github.com/charj-lang/intellij-charj)
 3. Charj 项目：[Charj](https://github.com/charj-lang/charj)
+4. Scie 语言识别引擎：[Scie](https://github.com/charj-lang/scie)
+
+
