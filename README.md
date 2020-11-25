@@ -31,7 +31,31 @@ Charj Lang 是一个使用 Rust 编写的**描述式**、**中间**编程语言�
 3. Charj 项目：[Charj](https://github.com/charj-lang/charj)
 4. Scie 语言识别引擎：[Scie](https://github.com/charj-lang/scie)
 
-### Suggestions
+## FAQ
+
+### 如何支持内置函数？
+
+来源：内置函数你怎么搞，比如打开文件 Python 是 Open，C++ 是 Stream，API 都不一样？
+
+Charj 并不会支持内置函数的转换。 Charj 关心的是语言的互转，可以简单的认为 AST 的互转，不考虑编译等场景。
+
+对应未来可能的支持方案：对内置函数进行接口封装，等转换到新语言后，再由开发者实现这些接口。
+
+### 是否实现虚拟机？
+
+需要等到有精力的时间再考虑。
+
+### C++ 的支持程度？
+
+C++ 过于复杂，未来只会出现有限的 C++ 支持。
+
+### Go Context？
+
+是否要实现一些库去模拟 Context 的 Timeout Cancel？
+
+### EBNF
+
+### 其它 Suggestions
 
 #### Notes
 
