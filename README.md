@@ -110,6 +110,10 @@ Translator DSL 将映射到 Poet DSL 上。
 理想情况下，通过我们的 Translator DSL，就可以再度将代码转换为新的语言。
 
 
+## Related
+
+[https://github.com/usethesource/rascal](https://github.com/usethesource/rascal) is a meta-programming language. It contains the interpreter, the parser generator, the parser run-time, the standard library, the online documentation and the type checker.
+
 ## FAQ
 
 ### 如何支持内置函数？
