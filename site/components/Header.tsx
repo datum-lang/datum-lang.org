@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import Link from 'next/link'
-import Transition from './Transition'
+import React, { useState } from "react"
+import Link from "next/link"
+import Transition from "./Transition"
 
 function Header ({ widerContent }: {
   widerContent?: boolean
@@ -11,7 +11,7 @@ function Header ({ widerContent }: {
     <div className='relative py-6'>
       <nav
         className={`mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8 ${
-          widerContent ? 'max-w-screen-xl' : 'max-w-screen-lg lg:p-0'
+          widerContent ? "max-w-screen-xl" : "max-w-screen-lg lg:p-0"
         }`}
       >
         <Link href='/'>
@@ -105,7 +105,7 @@ function Header ({ widerContent }: {
                       </div>
                     </div>
                   </a>
-                </Link>{' '}
+                </Link>{" "}
                 <div className='-mr-2'>
                   <button
                     type='button'

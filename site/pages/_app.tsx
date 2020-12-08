@@ -1,8 +1,9 @@
-import Head from 'next/head'
-import { ReactElement } from 'react'
-import '../styles/globals.css'
+import Head from "next/head"
+import { ReactElement } from "react"
+import "../styles/globals.css"
+import type {AppProps} from "next/app"
 
-function MyApp ({ Component, pageProps }): ReactElement {
+function MyApp ({ Component, pageProps }: AppProps): ReactElement {
   return (
     <div className='h-screen'>
       <Head>
