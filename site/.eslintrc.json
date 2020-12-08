@@ -31,7 +31,8 @@
     "//replaced by @typescript-eslint/no-unused-vars": 0,
     "no-unused-vars": ["off"],
     "react/no-unescaped-entities": ["error", { "forbid": [">", "}"] }],
-    "react/prop-types": ["off"]
+    "react/prop-types": ["off"],
+    "react/react-in-jsx-scope": ["off"]
   },
   "env": {
     "browser": true,

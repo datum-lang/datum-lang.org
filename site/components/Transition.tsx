@@ -1,5 +1,5 @@
-import { CSSTransition as ReactCSSTransition } from 'react-transition-group'
-import React, { ReactElement, ReactNode, useRef, useEffect, useContext } from 'react'
+import { CSSTransition as ReactCSSTransition } from "react-transition-group"
+import React, { ReactElement, ReactNode, useRef, useEffect, useContext } from "react"
 
 interface TransitionProps {
   show?: boolean
@@ -35,21 +35,21 @@ function useIsInitialRender (): boolean {
 
 function CSSTransition ({
   show,
-  enter = '',
-  enterFrom = '',
-  enterTo = '',
-  leave = '',
-  leaveFrom = '',
-  leaveTo = '',
+  enter = "",
+  enterFrom = "",
+  enterTo = "",
+  leave = "",
+  leaveFrom = "",
+  leaveTo = "",
   appear,
   children
 }: TransitionProps): ReactElement {
-  const enterClasses = enter.split(' ').filter((s) => s.length)
-  const enterFromClasses = enterFrom.split(' ').filter((s) => s.length)
-  const enterToClasses = enterTo.split(' ').filter((s) => s.length)
-  const leaveClasses = leave.split(' ').filter((s) => s.length)
-  const leaveFromClasses = leaveFrom.split(' ').filter((s) => s.length)
-  const leaveToClasses = leaveTo.split(' ').filter((s) => s.length)
+  const enterClasses = enter.split(" ").filter((s) => s.length)
+  const enterFromClasses = enterFrom.split(" ").filter((s) => s.length)
+  const enterToClasses = enterTo.split(" ").filter((s) => s.length)
+  const leaveClasses = leave.split(" ").filter((s) => s.length)
+  const leaveFromClasses = leaveFrom.split(" ").filter((s) => s.length)
+  const leaveToClasses = leaveTo.split(" ").filter((s) => s.length)
 
   function addClasses (node: HTMLElement, classes: string[]): void {
     classes.length && node.classList.add(...classes)
@@ -65,7 +65,7 @@ function CSSTransition ({
       unmountOnExit
       in={show}
       addEndListener={(node, done) => {
-        node.addEventListener('transitionend', done, false)
+        node.addEventListener("transitionend", done, false)
       }}
       onEnter={(node: HTMLElement) => {
         addClasses(node, [...enterClasses, ...enterFromClasses])
