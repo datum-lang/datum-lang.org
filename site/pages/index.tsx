@@ -1,5 +1,4 @@
 import Head from "next/head"
-import { FunctionComponent } from "react"
 import Header from "../components/Header"
 import {GetStaticProps} from "next"
 import { getPostBySlug } from "../lib/api"
@@ -9,7 +8,7 @@ interface Props {
   intro: string
 }
 
-const Home: FunctionComponent = (props: Props) => {
+const Home = ({intro}: Props) => {
   return (
     <>
       <Head>
@@ -28,7 +27,7 @@ const Home: FunctionComponent = (props: Props) => {
 
           </div>
           <div className="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
-            <Markdown source={props.intro} />
+            <Markdown source={intro} />
           </div>
         </div>
       </div>
