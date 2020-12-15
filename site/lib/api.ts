@@ -22,15 +22,18 @@ export function getPostBySlug (slug: string, fields: string[] = []) {
 
   // Ensure only the minimal needed data is exposed
   fields.forEach((field) => {
-    if (field === "slug") {
+    switch (field) {
+    case "slug":
       items[field] = realSlug
-    }
-    if (field === "content") {
+      break
+    case "content":
       items[field] = content
-    }
-
-    if (data[field]) {
-      items[field] = data[field]
+      break
+    default:
+      if (data[field]) {
+        items[field] = data[field]
+      }
+      break
     }
   })
 
