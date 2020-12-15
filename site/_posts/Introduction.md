@@ -14,8 +14,8 @@ Charj Lang 是一个使用 Rust 编写的**描述式**、**中间**编程语言�
  - legacy system migration.
  - domain model design for languages.
  - compile languages. for examples, JavaScript to WASM.
- - visualize architecture.
- - a quick DSL maker's infrastructure. (TBD)
+     - visualize architecture.
+     - a quick DSL maker's infrastructure. (TBD)
 
 ## Compiler Workflow
 
