@@ -1,6 +1,7 @@
 import Head from "next/head"
 import { ReactElement } from "react"
 import "../styles/globals.css"
+import "../styles/markdown.css"
 import type {AppProps} from "next/app"
 
 function MyApp ({ Component, pageProps }: AppProps): ReactElement {

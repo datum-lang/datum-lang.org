@@ -1,8 +1,15 @@
 import Head from "next/head"
 import { FunctionComponent } from "react"
 import Header from "../components/Header"
+import {GetStaticProps} from "next"
+import { getPostBySlug } from "../lib/api"
+import Markdown from "../components/Markdown"
 
-const Home: FunctionComponent = () => {
+interface Props {
+  intro: string
+}
+
+const Home: FunctionComponent = (props: Props) => {
   return (
     <>
       <Head>
@@ -20,6 +27,9 @@ const Home: FunctionComponent = () => {
             </h2>
 
           </div>
+          <div className="max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 mt-20">
+            <Markdown source={props.intro} />
+          </div>
         </div>
       </div>
     </>
@@ -27,3 +37,12 @@ const Home: FunctionComponent = () => {
 }
 
 export default Home
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const post = getPostBySlug("Introduction", [
+    "content"
+  ])
+  return {
+    props: {intro: post.content}
+  }
+}

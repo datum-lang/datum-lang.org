@@ -9,13 +9,15 @@
   },
   "dependencies": {
     "@tailwindcss/ui": "^0.7.2",
+    "dompurify": "^2.2.3",
     "gray-matter": "^4.0.2",
+    "marked": "^1.2.6",
     "next": "10.0.3",
+    "prism-react-renderer": "^1.1.1",
+    "prismjs": "^1.22.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-transition-group": "^4.4.1",
-    "remark": "^13.0.0",
-    "remark-html": "^13.0.1",
     "tailwindcss": "^2.0.1",
     "tailwindcss-hyphens": "^0.1.0"
   },
