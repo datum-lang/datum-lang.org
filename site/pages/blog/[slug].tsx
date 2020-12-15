@@ -1,10 +1,9 @@
-import markdownToHtml from '../../lib/markdownToHtml'
 import Head from 'next/head'
 import Header from '../../components/Header'
 import { useRouter } from 'next/router'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import ErrorPage from 'next/error'
-import PostContent from '../../components/PostContent'
+import Markdown from '../../components/Markdown'
 
 interface PostType {
   slug: string
@@ -33,7 +32,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
         <article className='max-w-screen-md mx-auto px-4 sm:px-6 md:px-8 py-8 mb-16'>
           <h1 className='tracking-tight font-bold text-5xl leading-10 mt-4 py-8'>{post.title}</h1>
           <div className='mt-8 -mx-4'>
-            <PostContent content={post.content} />
+            <Markdown source={post.content} />
           </div>
         </article>
         </div>
@@ -55,13 +54,11 @@ export async function getStaticProps ({ params }: Params) {
     'slug',
     'content'
   ])
-  const content = await markdownToHtml(post.content || '')
 
   return {
     props: {
       post: {
         ...post,
-        content
       }
     }
   }
