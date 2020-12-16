@@ -8,6 +8,8 @@ slug: charj-lang-roadmap
 
 # Charj Roadmap
 
+![Charj Process](https://charj-lang.github.io/arts/charj-process.svg)
+
 - 1.0：抽象出 Charj Lang
      - 快速的多语言 parser（当前，基于 textmate 高亮语法的  Scie 实现）
      - 设计 HIR 作为 Tier  1 级别语言的 IR
