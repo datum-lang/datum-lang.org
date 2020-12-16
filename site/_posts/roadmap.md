@@ -1,10 +1,12 @@
 ---
-title: 'Charj Lang Roadmap'
-date: '2020-12-15T22:50:07.322Z'
+title: Charj Lang Roadmap
+date: 2020-12-16T01:37:21.950Z
 author:
   name: Phodal
+slug: charj-lang-roadmap
 ---
 
+# Charj Roadmap
 
 - 1.0：抽象出 Charj Lang
      - 快速的多语言 parser（当前，基于 textmate 高亮语法的  Scie 实现）
