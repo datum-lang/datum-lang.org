@@ -38,7 +38,7 @@ const Home = ({intro}: Props) => {
 export default Home
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const post = getPostBySlug("Introduction", [
+  const post = getPostBySlug("introduction", [
     "content"
   ])
   return {
