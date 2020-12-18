@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import Header from '../../components/Header'
-import { useRouter } from 'next/router'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
-import ErrorPage from 'next/error'
 import Markdown from '../../components/Markdown'
 
 interface PostType {
@@ -19,14 +17,8 @@ interface Props {
 }
 
 const Post = ({ post, morePosts, preview }: Props) => {
-  const router = useRouter()
-  if (!router.isFallback && !post?.slug) {
-    return <ErrorPage statusCode={404} />
-  }
   return (
-    router.isFallback
-      ? <div>loading</div>
-      : <div className='bg-white'>
+      <div className='bg-white'>
         <Head><title>{post.title} | Charj</title></Head>
         <Header />
         <article className='max-w-screen-md mx-auto px-4 sm:px-6 md:px-8 py-8 mb-16'>
@@ -35,7 +27,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
             <Markdown source={post.content} />
           </div>
         </article>
-        </div>
+      </div>
   )
 }
 
@@ -57,9 +49,7 @@ export async function getStaticProps ({ params }: Params) {
 
   return {
     props: {
-      post: {
-        ...post,
-      }
+      post,
     }
   }
 }

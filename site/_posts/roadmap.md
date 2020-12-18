@@ -1,6 +1,6 @@
 ---
 title: Charj Lang Roadmap
-date: 2020-12-16T01:37:21.950Z
+date: '2020-12-16T01:37:21.950Z'
 author:
   name: Phodal
 slug: charj-lang-roadmap
