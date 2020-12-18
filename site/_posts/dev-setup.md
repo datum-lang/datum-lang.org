@@ -1,5 +1,5 @@
 ---
-title: 'Charj Dev Setup'
+title: Charj Dev Setup
 date: '2020-12-15T21:59:07.322Z'
 author:
   name: Phodal
