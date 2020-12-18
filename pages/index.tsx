@@ -12,7 +12,7 @@ const Home = ({intro}: Props) => {
   return (
     <>
       <Head>
-        <title>Charj</title>
+        <title>Charj - 语言的语言 && 下一代企业级编程语言</title>
       </Head>
       <div className='bg-white'>
         <div className='bg-gray-50 border-b border-gray-200'>
