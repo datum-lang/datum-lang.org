@@ -5,10 +5,6 @@ author:
   name: Phodal
 ---
 
-# Charj
-
-Charj Lang 是一个使用 Rust 编写的**描述式**、**中间**编程语言。其主要用途是：
-
 ![Charj Build](https://github.com/charj-lang/charj-poc/workflows/Charj%20Build/badge.svg)
 
 > A easy maintain(read/write) language for transform **from**/**to** other languages.
@@ -22,7 +18,11 @@ Design for:
      - domain model design for languages.
      - visualize architecture.
 
-上下游支撑项目：
+流程图：
+
+![流程图](https://github.com/charj-lang/arts/blob/master/charj-process.svg?raw=true)
+
+相关项目：
 
 1. IDEA 插件: [Intellij Charj](https://github.com/charj-lang/intellij-charj)
 2. Charj 项目：[Charj](https://github.com/charj-lang/charj)
@@ -30,9 +30,7 @@ Design for:
 4. Movable DSL: [movable](https://github.com/charj-lang/movable)
 5. Typography parser: [Typography](https://github.com/charj-lang/movable/tree/master/typography)
 
-![流程图](https://github.com/charj-lang/arts/blob/master/charj-process.svg?raw=true)
-
-## 流程设计
+## 流程（设计）
 
 ### 1. 解析（Stage 1.0）
 
