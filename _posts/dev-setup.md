@@ -5,10 +5,6 @@ author:
   name: Phodal
 ---
 
-
-# Charj Dev Setup
-
-
 ## macOS
 
 1. install LLVM

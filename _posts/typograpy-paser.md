@@ -6,8 +6,6 @@ author:
 slug: charj-typography-parser-draft
 ---
 
-# Charj Typography Parser (Draft)
-
 Typography is a DSL-base parser for build common AST. features:
 
  - extends

@@ -6,8 +6,6 @@ author:
 slug: charj-lang-roadmap
 ---
 
-# Charj Roadmap
-
 ![Charj Process](https://charj-lang.github.io/arts/charj-process.svg)
 
 - 1.0：抽象出 Charj Lang
