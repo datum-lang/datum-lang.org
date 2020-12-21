@@ -29,6 +29,9 @@ export function getPostBySlug (slug: string, fields: string[] = []) {
     case "content":
       items[field] = content
       break
+    case "snippet":
+      items[field] = content.substr(0, 100)
+      break
     default:
       if (data[field]) {
         items[field] = data[field]
