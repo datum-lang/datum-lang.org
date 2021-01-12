@@ -19,7 +19,7 @@ interface Props {
 const Post = ({post, morePosts, preview}: Props) => {
   return (
     <div className='bg-white'>
-      <Head><title>{post.title} | Charj - 语言的语言 && 下一代企业级编程语言</title></Head>
+      <Head><title>{post.title} | Datum - 语言的语言 && 下一代企业级编程语言</title></Head>
       <Header/>
       <article className='max-w-screen-md mx-auto px-4 sm:px-6 md:px-8 py-8 mb-16'>
         <h1 className='tracking-tight font-bold text-5xl leading-10 mt-4 py-8'>{post.title}</h1>

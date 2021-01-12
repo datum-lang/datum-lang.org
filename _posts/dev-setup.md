@@ -1,5 +1,5 @@
 ---
-title: Charj Dev Setup
+title: Datum Dev Setup
 date: '2020-12-15T21:59:07.322Z'
 author:
   name: Phodal
@@ -39,7 +39,7 @@ LLVM_SYS_110_PREFIX=/usr/local/Cellar/llvm/11.0.0 cargo build
 For beginner:
 
  - Rust documents: [The Rust Programming Language](https://doc.rust-lang.org/book/)
- - Charj Lexer/Parser - Lalrpop documents: [Lalrpop](https://github.com/lalrpop/lalrpop)
+ - Datum Lexer/Parser - Lalrpop documents: [Lalrpop](https://github.com/lalrpop/lalrpop)
  - LLVM Rust Binding: [Inkwell](https://github.com/TheDan64/inkwell)
 
 Rust + LLVM (Inkwell demo): [Rust LLVM Practises](https://github.com/phodal/rust-llvm-practises)

@@ -1,4 +1,4 @@
-# Homepage of Charj lang
+# Homepage of Datum lang
 
 ## Development
 

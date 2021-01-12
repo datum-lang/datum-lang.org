@@ -5,7 +5,7 @@ author:
   name: Phodal
 ---
 
-![Charj Build](https://github.com/charj-lang/charj-poc/workflows/Charj%20Build/badge.svg)
+![Datum Build](https://github.com/datum-lang/datum-poc/workflows/Datum%20Build/badge.svg)
 
 > A easy maintain(read/write) language for transform **from**/**to** other languages.
 
@@ -20,15 +20,15 @@ Design for:
 
 流程图：
 
-![流程图](https://github.com/charj-lang/arts/blob/master/charj-process.svg?raw=true)
+![流程图](https://github.com/datum-lang/arts/blob/master/datum-process.svg?raw=true)
 
 相关项目：
 
-1. IDEA 插件: [Intellij Charj](https://github.com/charj-lang/intellij-charj)
-2. Charj 项目：[Charj](https://github.com/charj-lang/charj)
-3. Scie 语言识别引擎：[Scie](https://github.com/charj-lang/scie)
-4. Movable DSL: [movable](https://github.com/charj-lang/movable)
-5. Typography parser: [Typography](https://github.com/charj-lang/movable/tree/master/typography)
+1. IDEA 插件: [Intellij Datum](https://github.com/datum-lang/intellij-datum)
+2. Datum 项目：[Datum](https://github.com/datum-lang/datum)
+3. Scie 语言识别引擎：[Scie](https://github.com/datum-lang/scie)
+4. Movable DSL: [movable](https://github.com/datum-lang/movable)
+5. Typography parser: [Typography](https://github.com/datum-lang/movable/tree/master/typography)
 
 ## 流程（设计）
 
@@ -84,13 +84,13 @@ int main() {
 
 Movable DSL 将映射到 Poet DSL 上。
 
-### 3. 生成 Charj 代码
+### 3. 生成 Datum 代码
 
-即，代码中的：https://github.com/charj-lang/charj-poet
+即，代码中的：https://github.com/datum-lang/datum-poet
 
-### 4. Charj 编辑与代码优化
+### 4. Datum 编辑与代码优化
 
-[https://github.com/charj-lang/charj](https://github.com/charj-lang/charj)
+[https://github.com/datum-lang/datum](https://github.com/datum-lang/datum)
 
 ### 5. 再次转换
 

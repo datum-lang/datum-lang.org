@@ -1,8 +1,8 @@
-# Charj
+# Datum
 
-The home of the Charj website 
+The home of the Datum website 
 
-Charj Lang 是一个使用 Rust 编写的**描述式**、**中间**编程语言。其主要用途是：
+Datum Lang 是一个使用 Rust 编写的**描述式**、**中间**编程语言。其主要用途是：
 
  - legacy system migration.
  - domain model design for languages.
@@ -26,10 +26,10 @@ Charj Lang 是一个使用 Rust 编写的**描述式**、**中间**编程语言�
 
 上下游支撑项目：
 
-1. 语言转换：[Charj Poet](https://github.com/charj-lang/charj-poet)
-2. IDEA 插件: [Intellij Charj](https://github.com/charj-lang/intellij-charj)
-3. Charj 项目：[Charj](https://github.com/charj-lang/charj)
-4. Scie 语言识别引擎：[Scie](https://github.com/charj-lang/scie)
+1. 语言转换：[Datum Poet](https://github.com/datum-lang/datum-poet)
+2. IDEA 插件: [Intellij Datum](https://github.com/datum-lang/intellij-datum)
+3. Datum 项目：[Datum](https://github.com/datum-lang/datum)
+4. Scie 语言识别引擎：[Scie](https://github.com/datum-lang/scie)
 
 
 ### Total compiler flow
@@ -38,10 +38,10 @@ Charj Lang 是一个使用 Rust 编写的**描述式**、**中间**编程语言�
  - origin language
  - Scie (tokenizer)
  - Poet DSL 1
- - Charj Poet
- - Charj code (charj compiler)
+ - Datum Poet
+ - Datum code (datum compiler)
  - Poet DSL 2
- - Charj Lang Generate API
+ - Datum Lang Generate API
  - other language
 ```
 
@@ -97,13 +97,13 @@ int main() {
 
 Translator DSL 将映射到 Poet DSL 上。
 
-#### 3. 生成 Charj 代码
+#### 3. 生成 Datum 代码
 
-即，代码中的：https://github.com/charj-lang/charj-poet
+即，代码中的：https://github.com/datum-lang/datum-poet
 
-#### 4. Charj 编辑与代码优化
+#### 4. Datum 编辑与代码优化
 
-[https://github.com/charj-lang/charj](https://github.com/charj-lang/charj)
+[https://github.com/datum-lang/datum](https://github.com/datum-lang/datum)
 
 #### 5. 再次转换
 
@@ -120,7 +120,7 @@ Translator DSL 将映射到 Poet DSL 上。
 
 来源：内置函数你怎么搞，比如打开文件 Python 是 Open，C++ 是 Stream，API 都不一样？
 
-Charj 并不会支持内置函数的转换。 Charj 关心的是语言的互转，可以简单的认为 AST 的互转，不考虑编译等场景。
+Datum 并不会支持内置函数的转换。 Datum 关心的是语言的互转，可以简单的认为 AST 的互转，不考虑编译等场景。
 
 对应未来可能的支持方案：对内置函数进行接口封装，等转换到新语言后，再由开发者实现这些接口。
 

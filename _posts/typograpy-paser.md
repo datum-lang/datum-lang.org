@@ -1,9 +1,9 @@
 ---
-title: Charj Typography Parser (Draft)
+title: Datum Typography Parser (Draft)
 date: '2020-12-16T01:37:21.950Z'
 author:
     name: Phodal
-slug: charj-typography-parser-draft
+slug: datum-typography-parser-draft
 ---
 
 Typography is a DSL-base parser for build common AST. features:

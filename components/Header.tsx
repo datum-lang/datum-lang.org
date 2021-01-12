@@ -16,10 +16,10 @@ function Header ({ widerContent }: {
       >
         <Link href='/'>
           <a className='flex items-center'>
-            <img className='h-10 w-auto sm:h-12 my-2' src='https://raw.githubusercontent.com/charj-lang/arts/master/logo.svg' alt='' />
+            <img className='h-10 w-auto sm:h-12 my-2' src='https://raw.githubusercontent.com/datum-lang/arts/master/logo.svg' alt='' />
             <div className='ml-5 flex flex-col justify-center'>
               <div className='font-bold text-gray-900 leading-tight text-2xl sm:text-3xl tracking-tight'>
-                Charj
+                Datum
               </div>
             </div>
           </a>
@@ -36,7 +36,7 @@ function Header ({ widerContent }: {
               fill='none'
               viewBox='0 0 24 24'
             >
-              <title>Menu | Charj</title>
+              <title>Menu | Datum</title>
               <path
                 strokeLinecap='round'
                 strokeLinejoin='round'
@@ -58,7 +58,7 @@ function Header ({ widerContent }: {
             </a>
           </Link>
           <a
-            href='https://github.com/charj-lang/charj'
+            href='https://github.com/datum-lang/datum'
             className='ml-10 text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out'
             style={{ lineHeight: 0 }}
           >
